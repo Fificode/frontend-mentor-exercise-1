@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.image{border-top-left-radius: 10px;
+border-top-right-radius: 10px;}
+.image-two{border-radius: 50%;
+border: 4px solid white;
+position: absolute;
+top: 25%;
+left: 34%;}
+    .background-full{position: relative;
+    width: 90%;
+    margin: auto;
+  background: url('images/bg-pattern-top.svg') left top no-repeat, url('images/bg-pattern-bottom.svg') right bottom no-repeat ;
+   background-size: 500px, 500px;
+  background-color:hsl(185, 75%, 39%) ;
+    height: 600px; 
+    }
+     #card-box{width: 290px;
+     position: absolute;
+     top: 20%;
+     left: 40%;
+     border-radius: 10px;
+     height: 320px;
+background-color: white;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.london{color: hsl(0, 0%, 59%) ;
+ font-size: 13px;
+ margin-top: -3%;
+ padding-bottom: 5px;}
+.flex-container{display: flex;
+flex-direction: row;
+justify-content: space-around;
+color: hsla(229, 23%, 23%, 0.9);
+margin-right: 15px;
+margin-left: 15px;
+font-weight: 700;
+}
+.flex-containertwo{display: flex;
+flex-direction: row;
+justify-content: space-around;
+color:hsla(0, 0%, 59%, 0.7) ;
+font-size: 10px;
+padding-top: 5px;
+letter-spacing: 1px;
+margin-right: 15px;
+margin-left: 15px;
+}
+.border-line{
+border: 1px solid hsla(0, 0%, 59%, 0.2); 
+border-style: solid none none none;
+width: 290px;}
+@media only screen and (max-width: 600px;){
+ .background-full{width: 100%;}
+  #card-box{
+    margin: auto;
+    
+    
+  }
+}
+  
+
+  </style>
+</head>
+<body>
+
+<div class=" background-full">
+  <div id="card-box">
+  <img src="images/bg-pattern-card.svg" width="290px" height="110px" class="image">
+  <img src="images/image-victor.jpg" width="80px" height="80px" class="image-two"><br><br><br><br>
+  <p style="color: hsl(229, 23%, 23%)
+  ;"><span style="font-weight: 700;">Victor Crest</span> <span style="color: hsl(0, 0%, 59%); padding-left: 3px;">26</span></p>
+  <p class="london">London</p>
+   <div class="border-line"></div><br>
+    <div class="flex-container">
+      <div> 80K</div>
+ <div> 803K</div>
+  <div> 1.4K</div>
+ </div>
+ <div  class="flex-containertwo">
+   <div> Followers</div>
+<div style="padding-right: 10px;">Likes</div>
+<div> Photos</div>
+
+ </div>
+  </div>
+</div>
+
+<br>
+
+
+ 
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Firdaws Lamidi</a>.
+  </div>
+</body>
+</html>
